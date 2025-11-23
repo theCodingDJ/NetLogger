@@ -1,1 +1,40 @@
+# =====================================
+# Swift Package Manager
+# =====================================
+.build/
+.swiftpm/xcode/
+.swiftpm/playgrounds/
+Package.resolved    # Optional — ignore if you don’t want to lock dependency versions
+
+# Logs
+*.log
+
+# =====================================
+# Xcode / Derived Data
+# =====================================
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# SwiftPM-generated Xcode workspace (safe to ignore)
+*.xcworkspace
+
+# =====================================
+# macOS system files
+# =====================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =====================================
+# Temporary / Backup
+# =====================================
+*.swp
+*.swo
+*~
+*.tmp
+
+# The original NetLogger project
 Old/
