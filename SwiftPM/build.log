@@ -1,0 +1,300 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -scheme NetLogger -destination generic/platform=iOS
+
+Resolve Package Graph
+Source files for target NetLoggerTests should be located under 'Tests/NetLoggerTests', 'Tests', or a custom sources path can be set with the 'path' property in Package.swift2025-11-23 22:54:05.461 xcodebuild[52502:8962708] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+
+
+Resolved source packages:
+  NetLogger: /Users/marinov/Developer/NetLogger/SwiftPM
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'NetLogger' in project 'NetLogger'
+        ➜ Explicit dependency on target 'NetLogger' in project 'NetLogger'
+    Target 'NetLogger' in project 'NetLogger' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: ebfe7e523133f2ce299f6484b6572874
+Build description path: /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/XCBuildData/ebfe7e523133f2ce299f6484b6572874.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk /Users/marinov/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -o /Users/marinov/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache
+
+CreateBuildDirectory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-create-build-directory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-create-build-directory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products
+
+CreateBuildDirectory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-create-build-directory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-create-build-directory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-create-build-directory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos
+
+CreateBuildDirectory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-create-build-directory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos
+
+CreateBuildDirectory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/PackageFrameworks
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-create-build-directory /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/PackageFrameworks
+
+WriteAuxiliaryFile /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/NetLogger.modulemap (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    write-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/NetLogger.modulemap
+
+WriteAuxiliaryFile /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.LinkFileList (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    write-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.LinkFileList
+
+WriteAuxiliaryFile /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger_const_extract_protocols.json (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    write-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-OutputFileMap.json (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    write-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.SwiftConstValuesFileList (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    write-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.SwiftFileList (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    write-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.SwiftFileList
+
+WriteAuxiliaryFile /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/NetLogger.DependencyStaticMetadataFileList (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    write-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/NetLogger.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/NetLogger.DependencyMetadataFileList (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    write-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/NetLogger.DependencyMetadataFileList
+
+Copy /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/GeneratedModuleMaps-iphoneos/NetLogger.modulemap /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/NetLogger.modulemap (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/NetLogger.modulemap /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/GeneratedModuleMaps-iphoneos
+
+SwiftDriver NetLogger normal arm64 com.apple.xcode.tools.swift.compiler (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name NetLogger -Onone -enforce-exclusivity\=checked @/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -target arm64-apple-ios14.0 -g -module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/marinov/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache -output-file-map /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swiftpm -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger_const_extract_protocols.json -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/include -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources-normal/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-Swift.h -working-directory /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ NetRecorder.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift (in target 'NetLogger' from project 'NetLogger')
+
+SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    
+
+SwiftCompile normal arm64 Compiling\ URLSession+Interception.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift (in target 'NetLogger' from project 'NetLogger')
+
+SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ NetLogger (in target 'NetLogger' from project 'NetLogger')
+
+EmitSwiftModule normal arm64 (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    
+
+SwiftCompile normal arm64 Compiling\ RequestDetailView.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift (in target 'NetLogger' from project 'NetLogger')
+SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:75:18: error: 'textSelection' is only available in iOS 15.0 or newer
+                .textSelection(.enabled)
+                 ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:75:18: note: add 'if #available' version check
+                .textSelection(.enabled)
+                 ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:68:9: note: add '@available' attribute to enclosing property
+    var body: some View {
+        ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:64:8: note: add '@available' attribute to enclosing struct
+struct DetailRow: View {
+       ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:75:33: error: 'enabled' is only available in iOS 15.0 or newer
+                .textSelection(.enabled)
+                                ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:75:33: note: add 'if #available' version check
+                .textSelection(.enabled)
+                                ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:68:9: note: add '@available' attribute to enclosing property
+    var body: some View {
+        ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:64:8: note: add '@available' attribute to enclosing struct
+struct DetailRow: View {
+       ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:96:14: error: 'textSelection' is only available in iOS 15.0 or newer
+            .textSelection(.enabled)
+             ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:96:14: note: add 'if #available' version check
+            .textSelection(.enabled)
+             ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:93:9: note: add '@available' attribute to enclosing property
+    var body: some View {
+        ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:81:8: note: add '@available' attribute to enclosing struct
+struct BodyView: View {
+       ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:96:29: error: 'enabled' is only available in iOS 15.0 or newer
+            .textSelection(.enabled)
+                            ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:96:29: note: add 'if #available' version check
+            .textSelection(.enabled)
+                            ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:93:9: note: add '@available' attribute to enclosing property
+    var body: some View {
+        ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift:81:8: note: add '@available' attribute to enclosing struct
+struct BodyView: View {
+       ^
+
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift -primary-file /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift -emit-dependencies-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestDetailView.d -emit-const-values-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestDetailView.swiftconstvalues -emit-reference-dependencies-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestDetailView.swiftdeps -serialize-diagnostics-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestDetailView.dia -target arm64-apple-ios14.0 -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -I /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/Developer/Library/Frameworks -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -swift-version 5 -enforce-exclusivity\=checked -Onone -D SWIFT_PACKAGE -D DEBUG -D SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -D Xcode -serialize-debugging-options -const-gather-protocols-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode -enable-anonymous-context-mangled-names -file-compilation-dir /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/marinov/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/swift-overrides.hmap -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/include -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources-normal/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name NetLogger -package-name swiftpm -frontend-parseable-output -disable-clang-spi -target-sdk-version 26.0 -target-sdk-name iphoneos26.0 -clang-target arm64-apple-ios26.0 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -o /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestDetailView.o -index-unit-output-path /NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestDetailView.o -index-store-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Index.noindex/DataStore -index-system-modules
+SwiftCompile normal arm64 Compiling\ NetLogger.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift (in target 'NetLogger' from project 'NetLogger')
+SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift:71:21: warning: main actor-isolated property 'mode' can not be referenced from a Sendable closure
+            if self.mode == .externalDisplay {
+                    ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift:13:16: note: property declared here
+    public var mode: PresentationMode = .overlay {
+               ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift:72:22: warning: call to main actor-isolated instance method 'updatePresentation()' in a synchronous nonisolated context
+                self.updatePresentation()
+                     ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift:40:18: note: calls to instance method 'updatePresentation()' from outside of its actor context are implicitly asynchronous
+    private func updatePresentation() {
+                 ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift:79:18: warning: call to main actor-isolated instance method 'updatePresentation()' in a synchronous nonisolated context
+            self.updatePresentation()
+                 ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift:40:18: note: calls to instance method 'updatePresentation()' from outside of its actor context are implicitly asynchronous
+    private func updatePresentation() {
+                 ^
+
+SwiftCompile normal arm64 Compiling\ ExternalDisplayManager.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift (in target 'NetLogger' from project 'NetLogger')
+SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift:12:9: warning: setter for 'screen' was deprecated in iOS 13.0
+        window.screen = screen
+        ^
+
+SwiftCompile normal arm64 Compiling\ RequestListView.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift (in target 'NetLogger' from project 'NetLogger')
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift -primary-file /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift -emit-dependencies-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestListView.d -emit-const-values-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestListView.swiftconstvalues -emit-reference-dependencies-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestListView.swiftdeps -serialize-diagnostics-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestListView.dia -target arm64-apple-ios14.0 -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -I /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/Developer/Library/Frameworks -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -swift-version 5 -enforce-exclusivity\=checked -Onone -D SWIFT_PACKAGE -D DEBUG -D SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -D Xcode -serialize-debugging-options -const-gather-protocols-file /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode -enable-anonymous-context-mangled-names -file-compilation-dir /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/marinov/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/swift-overrides.hmap -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/include -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources-normal/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name NetLogger -package-name swiftpm -frontend-parseable-output -disable-clang-spi -target-sdk-version 26.0 -target-sdk-name iphoneos26.0 -clang-target arm64-apple-ios26.0 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -o /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestListView.o -index-unit-output-path /NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/RequestListView.o -index-store-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Index.noindex/DataStore -index-system-modules
+
+SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:28:14: error: 'searchable(text:placement:prompt:)' is only available in iOS 15.0 or newer
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+             ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:28:14: note: add 'if #available' version check
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+             ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:20:9: note: add '@available' attribute to enclosing property
+    var body: some View {
+        ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:3:8: note: add '@available' attribute to enclosing struct
+struct RequestListView: View {
+       ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:28:56: error: 'navigationBarDrawer(displayMode:)' is only available in iOS 15.0 or newer
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+                                                       ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:28:56: note: add 'if #available' version check
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+                                                       ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:20:9: note: add '@available' attribute to enclosing property
+    var body: some View {
+        ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:3:8: note: add '@available' attribute to enclosing struct
+struct RequestListView: View {
+       ^
+/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift:37:16: warning: value 'error' was defined but never used; consider replacing with boolean test
+        if let error = request.error {
+           ~~~~^~~~~~~~
+                                     != nil
+
+SwiftCompile normal arm64 Compiling\ OverlayWindow.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift (in target 'NetLogger' from project 'NetLogger')
+SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for NetLogger (in target 'NetLogger' from project 'NetLogger')
+
+SwiftDriver\ Compilation\ Requirements NetLogger normal arm64 com.apple.xcode.tools.swift.compiler (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name NetLogger -Onone -enforce-exclusivity\=checked @/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -target arm64-apple-ios14.0 -g -module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/marinov/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache -output-file-map /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swiftpm -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger_const_extract_protocols.json -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/include -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources-normal/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-Swift.h -working-directory /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/GeneratedModuleMaps-iphoneos/NetLogger-Swift.h /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-Swift.h (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    builtin-swiftHeaderTool -arch arm64 /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-Swift.h -o /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/GeneratedModuleMaps-iphoneos/NetLogger-Swift.h
+
+Copy /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/NetLogger.swiftmodule/arm64-apple-ios.swiftmodule /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftmodule (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftmodule /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/NetLogger.swiftmodule/arm64-apple-ios.swiftmodule
+
+Copy /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/NetLogger.swiftmodule/arm64-apple-ios.swiftdoc /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftdoc (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftdoc /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/NetLogger.swiftmodule/arm64-apple-ios.swiftdoc
+
+Copy /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/NetLogger.swiftmodule/arm64-apple-ios.abi.json /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.abi.json (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.abi.json /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/NetLogger.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/NetLogger.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftsourceinfo (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftsourceinfo /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/NetLogger.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling URLSession+Interception.swift (in target 'NetLogger' from project 'NetLogger')
+
+SwiftDriverJobDiscovery normal arm64 Compiling NetRecorder.swift (in target 'NetLogger' from project 'NetLogger')
+
+SwiftDriver\ Compilation NetLogger normal arm64 com.apple.xcode.tools.swift.compiler (in target 'NetLogger' from project 'NetLogger')
+    cd /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name NetLogger -Onone -enforce-exclusivity\=checked @/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -target arm64-apple-ios14.0 -g -module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib -F /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/marinov/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache -output-file-map /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/marinov/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -package-name swiftpm -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger_const_extract_protocols.json -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Products/Debug-iphoneos/include -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources-normal/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources/arm64 -Xcc -I/Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/marinov/Library/Developer/Xcode/DerivedData/SwiftPM-ahqxqqioixrnxagdvcvvtaiclabq/Build/Intermediates.noindex/NetLogger.build/Debug-iphoneos/NetLogger.build/Objects-normal/arm64/NetLogger-Swift.h -working-directory /Users/marinov/Developer/NetLogger/SwiftPM/.swiftpm/xcode -experimental-emit-module-separately -disable-cmo
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift (in target 'NetLogger' from project 'NetLogger')
+	SwiftCompile normal arm64 Compiling\ RequestDetailView.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift (in target 'NetLogger' from project 'NetLogger')
+	SwiftCompile normal arm64 Compiling\ RequestListView.swift /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift (in target 'NetLogger' from project 'NetLogger')
+	SwiftCompile normal arm64 /Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift (in target 'NetLogger' from project 'NetLogger')
+	Building workspace SwiftPM with scheme NetLogger
+(5 failures)

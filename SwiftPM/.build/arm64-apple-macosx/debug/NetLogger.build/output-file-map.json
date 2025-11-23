@@ -1,0 +1,54 @@
+{
+  "": {
+    "swift-dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/master.swiftdeps"
+  },
+  "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift": {
+    "dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetRecorder.d",
+    "object": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetRecorder.swift.o",
+    "swiftmodule": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetRecorder~partial.swiftmodule",
+    "swift-dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetRecorder.swiftdeps",
+    "diagnostics": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetRecorder.dia"
+  },
+  "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift": {
+    "dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/URLSession+Interception.d",
+    "object": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/URLSession+Interception.swift.o",
+    "swiftmodule": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/URLSession+Interception~partial.swiftmodule",
+    "swift-dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/URLSession+Interception.swiftdeps",
+    "diagnostics": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/URLSession+Interception.dia"
+  },
+  "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift": {
+    "dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetLogger.d",
+    "object": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetLogger.swift.o",
+    "swiftmodule": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetLogger~partial.swiftmodule",
+    "swift-dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetLogger.swiftdeps",
+    "diagnostics": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetLogger.dia"
+  },
+  "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift": {
+    "dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/ExternalDisplayManager.d",
+    "object": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/ExternalDisplayManager.swift.o",
+    "swiftmodule": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/ExternalDisplayManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/ExternalDisplayManager.swiftdeps",
+    "diagnostics": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/ExternalDisplayManager.dia"
+  },
+  "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift": {
+    "dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/OverlayWindow.d",
+    "object": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/OverlayWindow.swift.o",
+    "swiftmodule": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/OverlayWindow~partial.swiftmodule",
+    "swift-dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/OverlayWindow.swiftdeps",
+    "diagnostics": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/OverlayWindow.dia"
+  },
+  "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift": {
+    "dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestDetailView.d",
+    "object": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestDetailView.swift.o",
+    "swiftmodule": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestDetailView~partial.swiftmodule",
+    "swift-dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestDetailView.swiftdeps",
+    "diagnostics": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestDetailView.dia"
+  },
+  "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift": {
+    "dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestListView.d",
+    "object": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestListView.swift.o",
+    "swiftmodule": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestListView~partial.swiftmodule",
+    "swift-dependencies": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestListView.swiftdeps",
+    "diagnostics": "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestListView.dia"
+  }
+}

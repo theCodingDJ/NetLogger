@@ -1,0 +1,3 @@
+module NetLogger {
+    header "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/include/NetLogger-Swift.h"
+}

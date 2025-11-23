@@ -1,0 +1,327 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.NetLogger-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/sources",
+      "importPath" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "NetLogger",
+      "moduleOutputPath" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/Modules/NetLogger.swiftmodule",
+      "objects" : [
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetRecorder.swift.o",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/URLSession+Interception.swift.o",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetLogger.swift.o",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/ExternalDisplayManager.swift.o",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/OverlayWindow.swift.o",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestDetailView.swift.o",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestListView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/include/NetLogger-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftpm"
+      ],
+      "outputFileMapPath" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetRecorder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/URLSession+Interception.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/NetLogger.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/ExternalDisplayManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/OverlayWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestDetailView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/RequestListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/Modules/NetLogger.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift",
+        "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift"
+      ],
+      "tempsPath" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "NetLogger" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "NetLogger",
+      "-package-name",
+      "swiftpm",
+      "-c",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift",
+      "-I",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/include/NetLogger-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftpm",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "NetLogger" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/NetRecorder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/Core/URLSession+Interception.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/NetLogger.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/ExternalDisplayManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/OverlayWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestDetailView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/marinov/Developer/NetLogger/SwiftPM/Sources/NetLogger/UI/RequestListView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/NetLogger.build/sources"
+    },
+    "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/marinov/Developer/NetLogger/SwiftPM/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
