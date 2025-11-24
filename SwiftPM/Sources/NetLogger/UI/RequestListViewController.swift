@@ -23,7 +23,7 @@ class RequestListViewController: UIViewController {
         setupTableView()
         loadRequests()
         
-        // Listen for new network requests
+        /// Listen for new network requests.
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(requestsDidChange),
@@ -66,11 +66,20 @@ class RequestListViewController: UIViewController {
     
     private func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
-        tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "RequestCell")
+        tableView.separatorInset = .zero
+        
         view.addSubview(tableView)
+        
+        NSLayoutConstraint.activate([
+            tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+        ])
     }
     
     // MARK: - Data
@@ -107,7 +116,10 @@ class RequestListViewController: UIViewController {
     // MARK: - Actions
     
     @objc private func closeTapped() {
-        dismiss(animated: true)
+        dismiss(animated: true) {
+            NetLogger.shared.hide()
+            NetLogger.shared.show()
+        }
     }
     
     @objc private func clearTapped() {
@@ -126,7 +138,7 @@ extension RequestListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RequestCell", for: indexPath)
         let request = filteredRequests[indexPath.row]
         
         var config = cell.defaultContentConfiguration()
@@ -141,13 +153,10 @@ extension RequestListViewController: UITableViewDelegate, UITableViewDataSource 
             let statusText = "\(response.statusCode)"
             let color = statusColor(for: response.statusCode)
             
-            let attributedText = NSMutableAttributedString(string: statusText)
-            attributedText.addAttribute(
-                .foregroundColor,
-                value: color,
-                range: NSRange(location: 0, length: statusText.count)
-            )
-            config.secondaryAttributedText = attributedText
+            cell.backgroundColor = color.withAlphaComponent(0.12)
+
+            config.secondaryText = statusText
+            config.secondaryTextProperties.color = config.textProperties.color.withAlphaComponent(0.6)
         } else if request.error != nil {
             config.secondaryText = "Error"
             config.secondaryTextProperties.color = .systemRed
@@ -158,6 +167,7 @@ extension RequestListViewController: UITableViewDelegate, UITableViewDataSource 
         
         cell.contentConfiguration = config
         cell.accessoryType = .disclosureIndicator
+        cell.selectionStyle = .none
         
         return cell
     }

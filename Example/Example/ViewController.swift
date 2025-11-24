@@ -4,7 +4,6 @@ import NetLogger
 class ViewController: UIViewController {
     
     private var statusLabel: UILabel!
-    private var externalDisplaySwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,34 +62,6 @@ class ViewController: UIViewController {
         let separator2 = createSeparator()
         stackView.addArrangedSubview(separator2)
         
-        // External display toggle
-        let toggleContainer = UIView()
-        toggleContainer.translatesAutoresizingMaskIntoConstraints = false
-        
-        let toggleLabel = UILabel()
-        toggleLabel.text = "Use External Display"
-        toggleLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        externalDisplaySwitch = UISwitch()
-        externalDisplaySwitch.addTarget(self, action: #selector(externalDisplayToggled), for: .valueChanged)
-        externalDisplaySwitch.translatesAutoresizingMaskIntoConstraints = false
-        
-        toggleContainer.addSubview(toggleLabel)
-        toggleContainer.addSubview(externalDisplaySwitch)
-        
-        NSLayoutConstraint.activate([
-            toggleLabel.leadingAnchor.constraint(equalTo: toggleContainer.leadingAnchor),
-            toggleLabel.centerYAnchor.constraint(equalTo: toggleContainer.centerYAnchor),
-            
-            externalDisplaySwitch.leadingAnchor.constraint(equalTo: toggleLabel.trailingAnchor, constant: 12),
-            externalDisplaySwitch.trailingAnchor.constraint(equalTo: toggleContainer.trailingAnchor),
-            externalDisplaySwitch.centerYAnchor.constraint(equalTo: toggleContainer.centerYAnchor),
-            
-            toggleContainer.heightAnchor.constraint(equalToConstant: 44)
-        ])
-        
-        stackView.addArrangedSubview(toggleContainer)
-        
         // Show NetLogger button
         let showButton = createButton(title: "Show NetLogger", action: #selector(showNetLoggerTapped), isPrimary: true)
         stackView.addArrangedSubview(showButton)
@@ -142,10 +113,6 @@ class ViewController: UIViewController {
     
     @objc private func errorRequestTapped() {
         performRequest(url: "https://invalid-url-that-fails.com")
-    }
-    
-    @objc private func externalDisplayToggled() {
-        NetLogger.shared.mode = externalDisplaySwitch.isOn ? .externalDisplay : .overlay
     }
     
     @objc private func showNetLoggerTapped() {
