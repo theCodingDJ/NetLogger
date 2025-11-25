@@ -11,7 +11,8 @@ class RequestListViewController: UIViewController {
         searchController.isActive && !(searchController.searchBar.text?.isEmpty ?? true)
     }
     
-    // MARK: - Lifecycle
+    /// Performs initial UI and data setup after the view is loaded.
+    /// Configures the background, search controller, navigation bar, and table view, loads stored requests, and registers for `NetLoggerRequestsChanged` notifications to refresh data when requests change.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,11 @@ class RequestListViewController: UIViewController {
         )
     }
     
+    /// Configures, registers, and adds the table view used to display the list of network requests.
+    /// 
+    /// Sets the table view's delegate and data source, registers the reusable cell with identifier
+    /// "RequestCell", disables automatic resizing mask translation, removes separator inset, and
+    /// pins the table view to the view's safe area using Auto Layout constraints.
     private func setupTableView() {
         tableView = UITableView(frame: view.bounds, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -113,7 +119,9 @@ class RequestListViewController: UIViewController {
         }
     }
     
-    // MARK: - Actions
+    /// Dismisses this view controller and refreshes NetLogger's visibility.
+    /// 
+    /// Called by the close action; dismisses the view controller and toggles NetLogger (hide then show) to refresh its UI/state.
     
     @objc private func closeTapped() {
         dismiss(animated: true) {
@@ -122,6 +130,9 @@ class RequestListViewController: UIViewController {
         }
     }
     
+    /// Clears all recorded network requests and refreshes the displayed list.
+    /// 
+    /// Removes every entry from the shared NetRecorder and reloads the controller's request data so the UI reflects the cleared state.
     @objc private func clearTapped() {
         NetRecorder.shared.clear()
         loadRequests()
@@ -133,10 +144,17 @@ class RequestListViewController: UIViewController {
 
 extension RequestListViewController: UITableViewDelegate, UITableViewDataSource {
     
+    /// Provides the number of rows for the table view's section.
+    /// - Parameter section: The section index (ignored; this list uses a single section).
+    /// - Returns: The number of filtered requests to display as rows.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         filteredRequests.count
     }
     
+    /// Configure and return a table view cell representing the HTTP request at the given index path.
+    /// 
+    /// The cell's main text is the request method and URL path (e.g., "GET /posts/1"). The secondary text shows the response status code, `"Error"` if the request failed, or `"Loading..."` if the request is in progress. When a response is present the cell receives a lightly tinted background color derived from the status code and the secondary text color is drawn with reduced opacity.
+    /// - Returns: A configured `UITableViewCell` for the request at `indexPath`.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RequestCell", for: indexPath)
         let request = filteredRequests[indexPath.row]

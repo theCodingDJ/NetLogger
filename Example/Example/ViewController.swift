@@ -5,6 +5,9 @@ class ViewController: UIViewController {
     
     private var statusLabel: UILabel!
     
+    /// Performs initial view controller setup.
+    /// 
+    /// Sets the view's background color and configures the view hierarchy and controls by calling `setupUI()`.
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -13,6 +16,9 @@ class ViewController: UIViewController {
         setupUI()
     }
     
+    /// Configures the view controller's user interface by creating and laying out the main stack and its child views.
+    /// 
+    /// Adds a centered vertical stack view and populates it with a title label, a status label (assigned to `statusLabel`), two separators, four request buttons (GET success, POST success, GET 404, error), and a primary "Show NetLogger" button. Constraints ensure the stack is centered with horizontal padding.
     private func setupUI() {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -111,10 +117,15 @@ class ViewController: UIViewController {
         performRequest(url: "https://jsonplaceholder.typicode.com/posts/999999")
     }
     
+    /// Triggers a network request using an intentionally invalid URL to simulate a failure.
+    /// 
+    /// This action is intended for the UI button; it performs a request that will fail and causes the view controller to update its status label with the resulting error.
     @objc private func errorRequestTapped() {
         performRequest(url: "https://invalid-url-that-fails.com")
     }
     
+    /// Displays the NetLogger interface when the "Show NetLogger" button is tapped.
+    /// Also logs a test message to the console.
     @objc private func showNetLoggerTapped() {
         print("[TEST] Show NetLogger button tapped")
         NetLogger.shared.show()
