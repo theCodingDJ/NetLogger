@@ -10,7 +10,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Start NetLogger
         NetLogger.shared.start()
-        NetLogger.shared.mode = .externalDisplay
         
         // Create window and root view controller
         window = UIWindow(frame: UIScreen.main.bounds)

@@ -27,9 +27,16 @@ class RequestDetailViewController: UIViewController {
     
     private func setupScrollView() {
         scrollView = UIScrollView(frame: view.bounds)
-        scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.alwaysBounceVertical = true
         view.addSubview(scrollView)
+        
+        NSLayoutConstraint.activate([
+            scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+        ])
         
         contentStackView = UIStackView()
         contentStackView.axis = .vertical
@@ -230,6 +237,44 @@ class RequestDetailViewController: UIViewController {
         textView.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
         textView.translatesAutoresizingMaskIntoConstraints = false
         
+        let viewJsonButton = UIButton(primaryAction: UIAction { _ in
+            self.showJsonTree(for: text)
+        })
+        viewJsonButton.setImage(UIImage(systemName: "list.bullet.indent"), for: .normal)
+        viewJsonButton.tintColor = .white
+        viewJsonButton.backgroundColor = .systemPink
+        viewJsonButton.layer.cornerRadius = 4
+        viewJsonButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        let copyJsonButton = UIButton(primaryAction: UIAction { _ in
+            UIPasteboard.general.string = text
+            
+            let alertController = UIAlertController(title: "Copied!", message: "The JSON string is now in your pasteboard.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .cancel))
+            self.present(alertController, animated: true)
+        })
+        copyJsonButton.setImage(UIImage(systemName: "doc.on.clipboard"), for: .normal)
+        copyJsonButton.tintColor = .white
+        copyJsonButton.backgroundColor = .systemTeal
+        copyJsonButton.layer.cornerRadius = 4
+        copyJsonButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        let buttonStackView = UIStackView(arrangedSubviews: [UIView(), viewJsonButton, copyJsonButton])
+        buttonStackView.spacing = 4
+        buttonStackView.alignment = .fill
+        buttonStackView.distribution = .fill
+        buttonStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            viewJsonButton.widthAnchor.constraint(equalToConstant: 40),
+            viewJsonButton.heightAnchor.constraint(equalToConstant: 40),
+            copyJsonButton.widthAnchor.constraint(equalToConstant: 40),
+            copyJsonButton.heightAnchor.constraint(equalToConstant: 40),
+            buttonStackView.heightAnchor.constraint(equalToConstant: 40),
+        ])
+        
+        contentStackView.addArrangedSubview(buttonStackView)
+        contentStackView.setCustomSpacing(2, after: buttonStackView)
         contentStackView.addArrangedSubview(textView)
     }
     
@@ -255,5 +300,16 @@ class RequestDetailViewController: UIViewController {
         
         // Last resort: show as hex
         return data.map { String(format: "%02x", $0) }.joined(separator: " ")
+    }
+    
+    // MARK: - JSONTree Viewer
+    private func showJsonTree(for json: String) {
+        let path = request.url?.path ?? "Unknown"
+        
+        let viewController = JSONTreeViewController(
+            requestPath: path,
+            jsonString: json
+        )
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
