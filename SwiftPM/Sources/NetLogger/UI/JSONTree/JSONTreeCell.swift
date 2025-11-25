@@ -60,6 +60,9 @@ final class JSONTreeCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// Configures the cell's UI, adds the subviews, and installs Auto Layout constraints used for layout and indentation.
+    ///
+    //// Sets selection/background appearance, adds `chevronImageView`, `keyLabel`, `valueLabel`, and `typeLabel` to the content view, activates their layout constraints, and stores the leading constraint used to adjust indentation.
     private func setupViews() {
         selectionStyle = .none
         backgroundColor = .systemBackground
@@ -92,6 +95,8 @@ final class JSONTreeCell: UITableViewCell {
         ])
     }
     
+    /// Updates the cell's UI to represent the provided JSON tree node.
+    /// - Parameter node: The `JSONTreeNode` whose level controls indentation, whose `hasChildren`/`isExpanded` control the disclosure chevron, whose `key` and `displayValue` supply the key and value labels, and whose `type` provides the type badge text and color.
     func configure(with node: JSONTreeNode) {
         /// Set indentation.
         let indentation = CGFloat(node.level) * nodeIndentationWidth

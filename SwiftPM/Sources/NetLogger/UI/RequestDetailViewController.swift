@@ -25,6 +25,9 @@ class RequestDetailViewController: UIViewController {
         displayRequestDetails()
     }
     
+    /// Configures the scrolling container and its content stack for the request details view.
+    /// 
+    /// Creates a vertically-bouncing `UIScrollView` pinned to the view's safe area and a vertical `UIStackView` inside it used to host all detail content. The stack view is given 20pt spacing, 16pt content insets from the scroll view edges, and a width constraint that matches the scroll view width minus the horizontal insets.
     private func setupScrollView() {
         scrollView = UIScrollView(frame: view.bounds)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -225,6 +228,8 @@ class RequestDetailViewController: UIViewController {
         return containerView
     }
     
+    /// Adds a monospaced, read-only code block showing `text` and a pair of action buttons to the view's content stack.
+    /// - Parameter text: The string to display in the code block. If the string contains JSON, the "View JSON Tree" action will present a JSON tree viewer for this content; the "Copy JSON" action copies the string to the system pasteboard and presents a confirmation alert. The created views are appended to `contentStackView`.
     private func addCodeBlock(_ text: String) {
         let textView = UITextView()
         textView.text = text
@@ -285,6 +290,9 @@ class RequestDetailViewController: UIViewController {
         return formatter.string(from: date)
     }
     
+    /// Formats raw data for display, preferring pretty-printed JSON, then UTF-8 text, and finally a hex representation.
+    /// - Parameter data: The raw data to format for presentation.
+    /// - Returns: A string containing pretty-printed JSON if `data` is JSON, a UTF-8 decoded string if it is valid text, or a space-separated hex byte sequence as a last resort.
     private func formatData(_ data: Data) -> String {
         // Try to parse as JSON first
         if let json = try? JSONSerialization.jsonObject(with: data),
@@ -302,7 +310,8 @@ class RequestDetailViewController: UIViewController {
         return data.map { String(format: "%02x", $0) }.joined(separator: " ")
     }
     
-    // MARK: - JSONTree Viewer
+    /// Presents a JSON tree viewer configured with the current request's URL path and the provided JSON string, and pushes it onto the navigation stack.
+    /// - Parameter json: The JSON string to display in the JSON tree viewer.
     private func showJsonTree(for json: String) {
         let path = request.url?.path ?? "Unknown"
         
